@@ -70,7 +70,6 @@ int main(){
 		cin>> action;
 
 		if(action=='a'){
-			//Todo: Add to Cart 
 			// View All Products + Choose Product + Add to the Cart 
 			Product * product = chooseProduct();
 			if(product!=NULL){

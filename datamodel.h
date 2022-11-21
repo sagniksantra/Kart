@@ -13,9 +13,7 @@ class Product{
 	int price;
 
 public:
-	Product(){
-
-	}
+	Product(){}
 	Product(int u_id, string name,int price){
 		id = u_id;
 		this->name = name;
@@ -68,7 +66,6 @@ public:
 	}
 
 	int getTotal(){
-		//Todo
 		int total = 0;
 		for(auto itemPair : items){
 			auto item = itemPair.second;
@@ -93,7 +90,7 @@ public:
 
 		return itemizedList + "\n Total Amount : Rs. " + to_string(cart_total) + '\n';
 	}
-	//later on
+
 	bool isEmpty(){
 		return items.empty();
 	}
